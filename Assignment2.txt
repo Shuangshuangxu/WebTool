@@ -1,0 +1,33 @@
+Part 1. Reading Assignment
+Chapter 5: Handling the Client Request: HTTP Request Headers
+http://pdf.coreservlets.com/HTTP-Request-Headers.pdf
+
+Part 2. Reading Assignment
+Chapter 6: Generating the Server Response: HTTP Status Codes
+http://pdf.coreservlets.com/HTTP-Status-Codes.pdf
+
+Part 3. Reading Assignment
+Chapter 7: Generating the Server Response: HTTP Response Headers
+http://pdf.coreservlets.com/HTTP-Response-Headers.pdf
+
+Part 4. Programming Assignment
+Write a servlet that displays request headers using:
+   Enumeration getHeaderNames()
+   Enumeration getHeaders(String name)
+https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html
+
+Part 5. Programming Assignment
+Create a servlet to read and display user input from the form you created in HW1.
+Sanitize user inputs to prevent XSS script injection.
+Use String methods or RegExp (on the server-side, not using JS) to remove all suspicious strings from request parameters before returning them to the application.
+ 
+Part 6. Programming Assignment
+Redo Part 5 by creating the form in doGet, and submitting the form to the same servlet via POST method, and displaying the results in doPost method. In other words, in this version, there will not be an HTML page. Only 1 servlet that prints the form, and then handles the form submission. Display this servlet by default by including the URL-pattern of the servlet in welcome-file part of the web.xml.
+
+PART 7. Programming Assignment
+Redo Part 5 by using getParameterMap() method.
+https://docs.oracle.com/javaee/7/api/javax/servlet/ServletRequest.html#getParameterMap--
+
+PART 8. Programming Assignment
+Redo Part 5 by using getParameterNames() method.
+https://docs.oracle.com/javaee/7/api/javax/servlet/ServletRequest.html#getParameterNames--
